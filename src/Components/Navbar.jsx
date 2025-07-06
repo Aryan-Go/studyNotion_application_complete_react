@@ -12,7 +12,12 @@ const Navbar = () => {
         navigate("/login")
     }
     const signupHandler = () => {
-        navigate("signup")
+        if (button_2 == "Sign Up") {
+            navigate("/signup")
+        }
+        else {
+            navigate("/dashboard")
+        }
     }
   return (
       <>
